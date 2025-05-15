@@ -39,13 +39,20 @@ h1 {
     margin-bottom: 20px;
 }
 
+.hero {
+    display: flex;
+    height: 100vh;
+}
+
 .imagem-hero {
     flex: 1;
 }
 
-.hero {
-    display: flex;
-
+.imagem-hero img {
+    width: 100%;
+    height: 97.3%;
+    object-fit: cover;
+    display: block;
 }
 
 .frase {
@@ -63,6 +70,14 @@ h1 {
 .frase h1,
 .frase p {
     margin: 0;
+}
+
+.frase h1 {
+    font-size: 80px;
+}
+
+.frase p {
+    font-size: 25px;
 }
 
 .login {
@@ -94,6 +109,12 @@ h1 {
     font-size: 20px;
     font-weight: bold;
     margin-top: 30px;
+    background-color: #beddf5;
+}
+
+.login button:hover {
+    background-color: rgb(39, 90, 255);
+    color: #f9f9f9;
 }
 
 .sobre {
@@ -119,6 +140,16 @@ h1 {
     line-height: 1.6;
     color: #444;
     margin-bottom: 15px;
+}
+
+.img-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-sobre img {
+    width: 65%;
 }
 
 .servicos {
