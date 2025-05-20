@@ -234,3 +234,12 @@ footer.contato img {
 section {
     height: 100vh;
 }
+
+.link-no-underline {
+    text-decoration: none;
+    color: black;
+}
+
+.rounded-img {
+    border-radius: 50%;
+}
