@@ -33,15 +33,26 @@
   <body>
     <!-- cabeçalho -->
     <header class="cabecalho">
-      <img
-        class="cabecalho-imagem rounded-img"
-        src="assets/imgs/logo.jpg"
-        alt="ESCOLINK"
-      />
-      <nav class="cabecalho-menu">
-        <a href="#" class="cabecalho-menu-item">Home</a>
-        <a href="#" class="cabecalho-menu-item">Sobre</a>
-        <a href="#" class="cabecalho-menu-item">Contato</a>
+      <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">Escolink</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contato</a>
+              </li>  
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -57,12 +68,24 @@
 
           <div class="login">
             <p>LOGIN</p>
-            <input id="input-login" type="text" placeholder="Digite seu Login" required />
+            <input
+              id="input-login"
+              type="text"
+              placeholder="Digite seu Login"
+              required
+            />
 
             <p>SENHA</p>
-            <input id="input-senha" type="text" placeholder="Digite sua senha" required />
+            <input
+              id="input-senha"
+              type="text"
+              placeholder="Digite sua senha"
+              required
+            />
 
-            <button id="btn-entrar" onclick="entrar()" type="submit">Entrar</button>
+            <button id="btn-entrar" onclick="entrar()" type="submit">
+              Entrar
+            </button>
           </div>
         </div>
       </section>
@@ -150,7 +173,7 @@
       </section>
 
       <!-- Sobre o projeto -->
-      <section class="sobre">
+      <section id="sobre" class="sobre">
         <div class="container-sobre">
           <h2>Sobre o Projeto</h2>
           <p>
@@ -204,7 +227,7 @@
     </main>
 
     <!-- rodapé -->
-    <footer class="contato">
+    <footer id="contato" class="contato">
       <div class="texto-centralizado">
         <h3>Contatos</h3>
         <ul>
