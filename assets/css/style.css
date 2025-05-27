@@ -69,15 +69,15 @@ h1 {
   font-weight: bold;
 } */
 
-.login input {
+/* .login input {
   width: 600px;
   height: 50px;
   font-size: large;
   border-radius: 5px;
   padding: 10px;
-}
+} */
 
-.login button {
+/* .login button {
   width: 200px;
   height: 40px;
   border-radius: 30px;
@@ -85,38 +85,38 @@ h1 {
   font-weight: bold;
   margin-top: 30px;
   background-color: #beddf5;
-}
+} */
 
-.login button:hover {
+/* .login button:hover {
   background-color: rgb(39, 90, 255);
   color: #f9f9f9;
-}
+} */
 
-.sobre {
+/* .sobre {
   background-color: #fff;
   color: #333;
   padding: 60px 20px;
-}
+} */
 
-.container-sobre {
+/* .container-sobre {
   max-width: 1000px;
   margin: 0 auto;
-}
+} */
 
-.sobre h2 {
+/* .sobre h2 {
   font-size: 28px;
   margin-bottom: 20px;
   color: #333;
-}
+} */
 
-.sobre p {
+/* .sobre p {
   font-size: 18px;
   line-height: 1.6;
   color: #444;
   margin-bottom: 15px;
-}
+} */
 
-.servicos {
+/* .servicos {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -125,31 +125,27 @@ h1 {
   padding: 30px;
   margin: 20px 0 0 0;
   text-align: center;
-}
+} */
 
-footer.contato ul {
+/* footer.contato ul {
   list-style: none;
   padding: 0;
   display: flex;
   gap: 20px;
   justify-content: center;
   color: #ecf0f1;
-}
+} */
 
-.texto-centralizado {
-  text-align: center;
-}
-
-.container {
+/* .container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
   gap: 40px;
   flex-wrap: wrap;
-}
+} */
 
-.item {
+/* .item {
   background-color: #fff;
   color: #333;
   padding: 20px;
@@ -158,28 +154,19 @@ footer.contato ul {
   width: 250px;
   text-align: center;
   transition: transform 0.2s;
-}
+} */
 
-.item img {
+/* .item img {
   width: 100%;
   height: 150px;
   object-fit: cover;
   border-radius: 8px;
-}
+} */
 
-.item:hover {
+/* .item:hover {
   transform: scale(1.05);
-}
+} */
 
 /* section {
     height: 100vh;
 } */
-
-.link-no-underline {
-  text-decoration: none;
-  color: black;
-}
-
-.rounded-img {
-  border-radius: 50%;
-}
