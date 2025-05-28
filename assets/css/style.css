@@ -1,28 +1,26 @@
-/**
-
-body {
+/* body {
   display: flex;
   flex-direction: column;
-}
+} */
 
-main {
+/* main {
   flex: 1;
-}
+} */
 
-h1 {
+/* h1 {
   margin-bottom: 20px;
-}
+} */
 
-.hero {
+/* .hero {
   display: flex;
   height: 100vh;
-}
+} */
 
-.imagem-hero {
+/* .imagem-hero {
   flex: 1;
-}
+} */
 
-*/
+
 
 /* .imagem-hero img {
   width: 100%;
