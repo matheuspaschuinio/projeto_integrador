@@ -1,5 +1,5 @@
 const sidebar = document.querySelector(".sidebar");
-const sidebarToggleBtn = document.querySelector(".sidebar-toggle");
+const sidebarToggleBtn = document.querySelectorAll(".sidebar-toggle");
 const themeToggleBtn = document.querySelector(".theme-toggle");
 const themeIcon = themeToggleBtn.querySelector(".theme-icon");
 const searchForm = document.querySelector(".search-form");
@@ -18,9 +18,11 @@ document.body.classList.toggle("dark-theme", shouldUseDarktheme);
 updateThemeIcon();
 
 // Toggle sidebar collapsed state on button click
-sidebarToggleBtn.addEventListener("click", () => {
-    sidebar.classList.toggle("collapsed");
-    updateThemeIcon();
+sidebarToggleBtn.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      sidebar.classList.toggle("collapsed");
+      updateThemeIcon();
+    })
 });
 
 //  Expand the sidebar when the search form is clicked
