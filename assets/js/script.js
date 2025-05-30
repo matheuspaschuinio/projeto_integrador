@@ -4,19 +4,40 @@ const inputSenha = document.getElementById("input-senha");
 const btnEntrar = document.getElementById("btn-entrar");
 
 function entrar() {
-  if (inputLogin.value === "aluno1" && inputSenha.value === "aluno1") {
-    alert("Bem vindo aluno1");
+
+  /** Alunos */
+  if (inputLogin.value === "123" && inputSenha.value === "123") {
+
+    alert("Bem vindo Aluno");
+    window.location.href = "../../sidebar.html";
+
+  /** Professores */
   } else if (inputLogin.value == "prof1" && inputSenha.value == "prof1") {
+
     alert("Bem vindo prof1");
+
+  /** Direção e Secretaria */
   } else if (inputLogin.value == "direcao1" && inputSenha.value == "direcao1") {
+
     alert("Bem vindo direcao1");
+
+  /** Pais e responsáveis */
   } else if (inputLogin.value == "pais1" && inputSenha.value == "pais1") {
+
     alert("Bem vindo pais1");
+
+  /** Input vazio */
   } else if (inputLogin.value == "" && inputSenha.value == "") {
+
     alert("Preencha os campos login e senha!");
+
+  /** Login inválidos */
   } else {
-    alert("login ou senha inválidos!");
+
+    alert("Login ou senha inválidos!");
+
   }
+
 }
 
 /**
