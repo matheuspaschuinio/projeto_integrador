@@ -38,3 +38,5 @@ themeToggleBtn.addEventListener("click", () => {
     localStorage.setItem("theme", isDark ? "dark" : "light");
     updateThemeIcon();
 })
+
+if(window.innerWidth > 768) sidebar.classList.add("collapsed");
