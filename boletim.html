@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boletim</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Fonte -->
     <link
@@ -17,345 +17,234 @@
 
     <link rel="stylesheet" href="./assets/css/sidebar.css">
 </head>
-<body class="font-[Roboto]">
+<body class="font-[Roboto] min-h-screen flex flex-col bg-gray-100">
 
-
-    <div class="container">
+    <div class="flex flex-1">
 
         <aside class="sidebar collapsed">
-    
             <!-- Sidebar header -->
             <header class="sidebar-header">
-    
                 <a href="./sidebar.html">
-
                     <img src="./assets/imgs/logo/logo-64.png" alt="Logo da Escolink" class="header-logo">
-                
                 </a>
-    
                 <button class="sidebar-toggle">
-    
                     <span class="material-symbols-rounded">
                       chevron_left
                     </span>
-    
                 </button>
-    
             </header>
     
             <div class="sidebar-content">
-    
                 <!-- Search form -->
                 <form action="#" class="search-form">
-    
                     <span class="material-symbols-rounded">
                       search
                     </span>
-    
                     <input type="search" placeholder="Pesquisar..." required>
-    
                 </form>
     
                 <!-- Menu list -->
                  <ul class="menu-list">
-    
                     <li class="menu-item">
-    
-                        <a href="#" class="menu-link active">
-    
+                        <a href="#" class="menu-link">
                             <span class="material-symbols-rounded">
                               home
                             </span>
-    
                             <span class="menu-label">Home</span>
-    
                         </a>
-    
                     </li>
-    
                     <li class="menu-item">
-    
                         <a href="#" class="menu-link">
-    
                             <span class="material-symbols-rounded">
                               notifications
                             </span>
-    
                             <span class="menu-label">Agenda</span>
-    
                         </a>
-    
                     </li>
-    
                     <li class="menu-item">
-    
-                        <a href="#" class="menu-link">
-    
+                        <a href="#" class="menu-link active">
                             <span class="material-symbols-rounded">
                               insert_chart
                             </span>
-    
                             <span class="menu-label">Boletim</span>
-    
                         </a>
-    
                     </li>
-
                     <li class="menu-item">
-    
                         <a href="#" class="menu-link">
-    
                             <span class="material-symbols-rounded">
                               inventory
                             </span>
-    
                             <span class="menu-label">Tarefas</span>
-    
                         </a>
-    
                     </li>
-    
-                    <!-- <li class="menu-item">
-    
-                        <a href="#" class="menu-link">
-    
-                            <span class="material-symbols-rounded">
-                              star
-                            </span>
-    
-                            <span class="menu-label">Favourites</span>
-    
-                        </a>
-    
-                    </li>
-    
-                    <li class="menu-item">
-    
-                        <a href="#" class="menu-link">
-    
-                            <span class="material-symbols-rounded">
-                              storefront
-                            </span>
-    
-                            <span class="menu-label">Products</span>
-    
-                        </a>
-    
-                    </li>
-    
-                    <li class="menu-item">
-    
-                        <a href="#" class="menu-link">
-    
-                            <span class="material-symbols-rounded">
-                              group
-                            </span>
-    
-                            <span class="menu-label">Customers</span>
-    
-                        </a>
-    
-                    </li>
-    
-                    <li class="menu-item">
-    
-                        <a href="#" class="menu-link">
-    
-                            <span class="material-symbols-rounded">
-                              settings
-                            </span>
-    
-                            <span class="menu-label">Settings</span>
-    
-                        </a>
-    
-                    </li> -->
-    
                  </ul>
-    
             </div>
     
             <!-- Sidebar footer -->
             <div class="sidebar-footer">
-    
                 <button class="theme-toggle">
-    
                     <div class="theme-label">
-    
                         <span class="theme-icon material-symbols-rounded">
                           dark_mode
                         </span>
-    
                         <span class="theme-text">
                             Dark Mode
                         </span>
-    
                         <div class="theme-toggle-track">
-    
                             <div class="theme-toggle-indicator"></div>
-    
                         </div>
-    
                     </div>
-    
                 </button>
-    
             </div>
-    
         </aside>
         
-        <div class="main-content p-6">
-            <h1 class="page-title text-3xl font-bold mb-6">Boletim</h1>
+        <div class="main-content flex-1 overflow-auto">
+            <div class="boletim-container">
+                <h1 class="text-center text-3xl font-bold mb-6">BOLETIM</h1>
 
-            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <div class="flex flex-col lg:flex-row items-center gap-6 mb-6">
 
-                <!-- Dados do aluno -->
+                    <!-- foto do aluno  -->
 
-                <div class="flex flex-col md:flex-row items-center gap-6 mb-6">
-                    <div class="w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center text-4xl">
-                        👤
+                    <div class="w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center text-5xl">
+                        <span>👤</span>
                     </div>
-                    <div class="flex-1 grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
-                        <input type="text" placeholder="Nome:" class="w-full border border-gray-300 p-2 rounded" readonly>
-                        <input type="text" placeholder="RA:" class="w-full border border-gray-300 p-2 rounded" readonly>
-                        <input type="text" placeholder="Turma:" class="w-full border border-gray-300 p-2 rounded" readonly>
-                        <input type="email" placeholder="Email do aluno:" class="w-full border border-gray-300 p-2 rounded" readonly>
+
+                    <!-- Dados do Aluno -->
+
+                    <div class="flex-1 w-full space-y-3">
+                        <input type="text" placeholder="Nome:" class="w-full border p-3 rounded-lg text-lg" readonly/>
+                        <input type="text" placeholder="RA:" class="w-full border p-3 rounded-lg text-lg" readonly/>
+                        <input type="text" placeholder="Turma:" class="w-full border p-3 rounded-lg text-lg" readonly/>
+                        <input type="email" placeholder="EMAIL do Aluno:" class="w-full border p-3 rounded-lg text-lg" readonly/>
                     </div>
                 </div>
 
                 <!-- Funcionalidades -->
 
                 <div class="flex flex-col sm:flex-row items-center gap-4 mb-6">
-                    <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors w-full sm:w-auto">
+                    <button class="bg-gray-300 px-5 py-2 rounded-lg text-lg hover:bg-gray-400 w-full sm:w-auto text-center">
                         Gerar PDF
                     </button>
-                    <select name="data-boletim" id="data-boletim" class="border border-gray-300 p-2 rounded w-full sm:w-auto">
-                        <option value="">2025</option>
-                        <option value="">2024</option>
-                        <option value="">2023</option>
+                    <select class="border p-2 rounded-lg text-lg w-full sm:w-auto">
+                        <option>2025</option>
+                        <option>2024</option>
+                        <option>2023</option>
                     </select>
                 </div>
-            </div>
 
                 <!-- Tabela boletim -->
 
-            <div class="bg-white p-6 rounded-lg shadow-md overflow-hidden">
                 <div class="overflow-x-auto">
-                    <table class="w-full border-collapse">
+                    <table class="table-auto w-full border border-gray-300 text-center text-base">
                         <thead class="bg-gray-100">
                             <tr>
-                                <th class="border px-4 py-3 text-left">Disciplinas</th>
-                                <th class="border px-4 py-3">1º Bim</th>
-                                <th class="border px-4 py-3">2º Bim</th>
-                                <th class="border px-4 py-3">3º Bim</th>
-                                <th class="border px-4 py-3">4º Bim</th>
-                                <th class="border px-4 py-3">Final</th>
-                                <th class="border px-4 py-3">Aná. do conselho</th>
-                                <th class="border px-4 py-3">Faltas</th>
-                                <th class="border px-4 py-3">Frequência</th>
+                                <th class="border p-3">Disciplinas</th>
+                                <th class="border p-3">1º Bim</th>
+                                <th class="border p-3">2º Bim</th>
+                                <th class="border p-3">3º Bim</th>
+                                <th class="border p-3">4º Bim</th>
+                                <th class="border p-3">Final</th>
+                                <th class="border p-3">Anál. do conselho</th>
+                                <th class="border p-3">Faltas</th>
+                                <th class="border p-3">Frequência</th>
                             </tr>
                         </thead>
-
                         <tbody>
-
-                            <!-- disciplinas -->
-
-                            <tr class="hover:bg-gray-50">
-                                <td class="border px-4 py-3 text-left">Língua Portuguesa</td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
+                            <tr>
+                                <td class="border p-3">Língua Portuguesa</td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
                             </tr>
-                            <tr class="hover:bg-gray-50">
-                                <td class="border px-4 py-3 text-left">Matemática</td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
+                            <tr>
+                                <td class="border p-3">Matemática</td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
                             </tr>
-                            <tr class="hover:bg-gray-50">
-                                <td class="border px-4 py-3 text-left">Ciências</td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
+                            <tr>
+                                <td class="border p-3">Ciências</td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
                             </tr>
-                            <tr class="hover:bg-gray-50">
-                                <td class="border px-4 py-3 text-left">História</td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
+                            <tr>
+                                <td class="border p-3">História</td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
                             </tr>
-                            <tr class="hover:bg-gray-50">
-                                <td class="border px-4 py-3 text-left">Geografia</td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
+                            <tr>
+                                <td class="border p-3">Geografia</td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
                             </tr>
-                            <tr class="hover:bg-gray-50">
-                                <td class="border px-4 py-3 text-left">Arte</td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
+                            <tr>
+                                <td class="border p-3">Arte</td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
                             </tr>
-                            <tr class="hover:bg-gray-50">
-                                <td class="border px-4 py-3 text-left">Educação Física</td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
+                            <tr>
+                                <td class="border p-3">Educação Física</td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
                             </tr>
-                            <tr class="hover:bg-gray-50">
-                                <td class="border px-4 py-3 text-left">Língua Inglesa</td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
-                                <td class="border px-4 py-3"></td>
+                            <tr>
+                                <td class="border p-3">Língua Inglesa</td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
+                                <td class="border p-3"></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
-
     </div>
-    
     
     <script src="assets/js/script.js"></script>
     <script src="assets/js/sidebar.js"></script>
