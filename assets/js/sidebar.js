@@ -1,9 +1,11 @@
+/** Variáveis */
 const sidebar = document.querySelector(".sidebar");
 const sidebarToggleBtn = document.querySelectorAll(".sidebar-toggle");
 const themeToggleBtn = document.querySelector(".theme-toggle");
 const themeIcon = themeToggleBtn.querySelector(".theme-icon");
 const searchForm = document.querySelector(".search-form");
 
+/** Atualizando icone do tema */
 const updateThemeIcon = () => {
     const isDark = document.body.classList.contains("dark-theme");
     themeIcon.textContent = sidebar.classList.contains("collapsed") ? (isDark ? "light_mode" : "dark_mode") : "dark_mode";
