@@ -6,40 +6,16 @@
   box-sizing: border-box;
 }
 
-:root {
-  /* Light theme colors */
-  --color-text-primary: #1F2936;
-  --color-text-placeholder: #798EAE;
-  --color-bg-primary: #f9fafb;
-  --color-bg-secondary: #ECECFD;
-  --color-bg-sidebar: #FFFFFF;
-  --color-border-hr: #E2E8F0;
-  --color-hover-primary: #695CFE;
-  --color-hover-secondary: #e2e2fb;
-  --color-shadow: rgba(0, 0, 0, 0.05);
-}
 
 body {
   background-color: var(--color-bg-primary);
-}
-
-body.dark-theme {
-  /* Dark theme colors */
-  --color-text-primary: #F1F5F9;
-  --color-text-placeholder: #A6B7D2;
-  --color-bg-primary: #111827;
-  --color-bg-secondary: #3D4859;
-  --color-bg-sidebar: #1f2937;
-  --color-border-hr: #3B475C;
-  --color-hover-secondary: #48566a;
-  --color-shadow: rgba(0, 0, 0, 0.3);
 }
 
 .sidebar {
   position: sticky;
   top: 0;
   height: 100vh;
-  width: 270px;
+  width: 90px;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
@@ -338,6 +314,7 @@ body.dark-theme .theme-toggle-track .theme-toggle-indicator {
     transition: .4s ease;
   }
 
+  /** Quando o body tem a .sidebar que não tem o .collapsed, ou seja, quando a sidebar está aberta */
   body:has(.sidebar:not(.collapsed))::before {
     opacity: 1;
     pointer-events: auto;
