@@ -14,536 +14,689 @@
 
     <title>Mensagens | Alunos</title>
 
+    <!-- Favicon -->
     <link rel="shortcut icon" href="../../assets/imgs/favicon/favicon.ico" type="image/x-icon">
 
+    <!-- Link dos icones(google fontes) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- Estilo Mensagens -->
     <link rel="stylesheet" href="../../assets/css/mensagens.css">
 
 </head>
 
 <body>
 
+    <!-- Site navbar -->
+    <nav class="site-nav">
+
+        <button class="sidebar-toggle">
+
+            <span class="material-symbols-rounded">
+                menu
+            </span>
+
+        </button>
+
+    </nav>
+
     <div class="container">
 
-        <div class="leftSide">
+        <aside class="sidebar collapsed">
+    
+            <!-- Sidebar header -->
+            <header class="sidebar-header">
+    
+                <a href="./sidebar.html">
 
-            <!-- Header -->
-            <div class="header">
+                    <img src="../../assets/imgs/logo/logo-64.png" alt="Logo da Escolink" class="header-logo">
+                
+                </a>
+    
+                <button class="sidebar-toggle">
+    
+                    <span class="material-symbols-rounded">
+                      chevron_left
+                    </span>
+    
+                </button>
+    
+            </header>
+    
+            <div class="sidebar-content">
+    
+                <!-- Search form -->
+                <form action="#" class="search-form">
+    
+                    <span class="material-symbols-rounded">
+                      search
+                    </span>
+    
+                    <input type="search" placeholder="Pesquisar..." required>
+    
+                </form>
+    
+                <!-- Menu list -->
+                 <ul class="menu-list">
+    
+                    <li class="menu-item">
+    
+                        <a href="./sidebar.html" title="Home" class="menu-link active">
+    
+                            <span class="material-symbols-rounded">
+                              home
+                            </span>
+    
+                            <span class="menu-label">Home</span>
+    
+                        </a>
+    
+                    </li>
+    
+                    <li class="menu-item">
+    
+                        <a href="#" title="Agenda" class="menu-link">
+    
+                            <span class="material-symbols-rounded">
+                              notifications
+                            </span>
+    
+                            <span class="menu-label">Agenda</span>
+    
+                        </a>
+    
+                    </li>
+    
+                    <li class="menu-item">
+    
+                        <a href="./boletim.html" title="Boletim" class="menu-link">
+    
+                            <span class="material-symbols-rounded">
+                              insert_chart
+                            </span>
+    
+                            <span class="menu-label">Boletim</span>
+    
+                        </a>
+    
+                    </li>
 
-                <div class="userimg">
-
-                    <img src="../../assets/imgs/mensagens/person-50.jpg" alt="" class="cover">
-
-                </div>
-
-                <ul class="nav_icons">
-
-                    <li><ion-icon name="scan-circle-outline"></ion-icon></li>
-
-                    <li><ion-icon name="chatbox"></ion-icon></li>
-
-                    <li><ion-icon name="ellipsis-vertical"></ion-icon></li>
-
-                </ul>
-
+                    <li class="menu-item">
+    
+                        <a href="#" title="Tarefas" class="menu-link">
+    
+                            <span class="material-symbols-rounded">
+                              message
+                            </span>
+    
+                            <span class="menu-label">Tarefas</span>
+    
+                        </a>
+    
+                    </li>
+    
+                 </ul>
+    
             </div>
-
-            <!-- Search Chat -->
-            <div class="search_chat">
-
-                <div>
-
-                    <input type="text" placeholder="Search or start new chat">
-
-                    <ion-icon name="search-outline"></ion-icon> 
-
-                </div>                
-
+    
+            <!-- Sidebar footer -->
+            <div class="sidebar-footer">
+    
+                <button class="theme-toggle">
+    
+                    <div class="theme-label">
+    
+                        <span class="theme-icon material-symbols-rounded">
+                          dark_mode
+                        </span>
+    
+                        <span class="theme-text">
+                            Dark Mode
+                        </span>
+    
+                        <div class="theme-toggle-track">
+    
+                            <div class="theme-toggle-indicator"></div>
+    
+                        </div>
+    
+                    </div>
+    
+                </button>
+    
             </div>
+    
+        </aside>
+        
+        <!-- Área de mensagens -->
+        <div class="main-content">
 
-            <!-- CHAT LIST -->
-            <div class="chatlist">
+            <div class="container-msg">
 
-                <div class="block active">
+                <!-- Contatos -->
+                <div class="leftSide">
 
-                    <div class="imgBox">
+                    <!-- Header -->
+                    <div class="header">
 
-                        <img src="images/img1.jpg" class="cover" alt="">
+                        <div class="userimg">
 
-                    </div>
-
-                    <div class="details">
-
-                        <div class="listHead">
-
-                            <h4>Jhon Doe</h4>
-
-                            <p class="time">10:56</p>
+                            <img src="../../assets/imgs/mensagens/person-50.jpg" alt="" class="cover">
 
                         </div>
 
-                        <div class="message_p">
+                        <ul class="nav_icons">
 
-                            <p>How are you doing?</p>
+                            <li><ion-icon name="scan-circle-outline"></ion-icon></li>
+
+                            <li><ion-icon name="chatbox"></ion-icon></li>
+
+                            <li><ion-icon name="ellipsis-vertical"></ion-icon></li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Search Chat -->
+                    <div class="search_chat">
+
+                        <div>
+
+                            <input type="text" placeholder="Search or start new chat">
+
+                            <ion-icon name="search-outline"></ion-icon> 
+
+                        </div>         
+
+                    </div>
+
+                    <!-- CHAT LIST -->
+                    <div class="chatlist">
+
+                        <div class="block active">
+
+                            <div class="imgBox">
+
+                                <img src="images/img1.jpg" class="cover" alt="">
+
+                            </div>
+
+                            <div class="details">
+
+                                <div class="listHead">
+
+                                    <h4>Jhon Doe</h4>
+
+                                    <p class="time">10:56</p>
+
+                                </div>
+
+                                <div class="message_p">
+
+                                    <p>How are you doing?</p>
+
+                                </div>
+
+                            </div>
 
                         </div>
 
-                    </div>
+                        <div class="block unread">
 
-                </div>
+                            <div class="imgBox">
 
-                <div class="block unread">
+                                <img src="images/img2.jpg" class="cover" alt="">
 
-                    <div class="imgBox">
+                            </div>
 
-                        <img src="images/img2.jpg" class="cover" alt="">
+                            <div class="details">
 
-                    </div>
-                    
-                    <div class="details">
+                                <div class="listHead">
 
-                        <div class="listHead">
+                                    <h4>Andre</h4>
 
-                            <h4>Andre</h4>
+                                    <p class="time">12:34</p>
 
-                            <p class="time">12:34</p>
+                                </div>
 
-                        </div>
+                                <div class="message_p">
 
-                        <div class="message_p">
+                                    <p>I love your youtube videos!</p>
 
-                            <p>I love your youtube videos!</p>
+                                    <b>1</b>
 
-                            <b>1</b>
+                                </div>
 
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="block unread">
-
-                    <div class="imgBox">
-
-                        <img src="images/img3.jpg" class="cover" alt="">
-
-                    </div>
-
-                    <div class="details">
-
-                        <div class="listHead">
-
-                            <h4>Olivia</h4>
-
-                            <p class="time">Yesterday</p>
+                            </div>
 
                         </div>
 
-                        <div class="message_p">
+                        <div class="block unread">
 
-                            <p>I just subscribed to your channel</p>
+                            <div class="imgBox">
 
-                            <b>2</b>
+                                <img src="images/img3.jpg" class="cover" alt="">
 
-                        </div>
-                        
-                    </div>
+                            </div>
 
-                </div>
+                            <div class="details">
 
-                <div class="block">
+                                <div class="listHead">
 
-                    <div class="imgBox">
+                                    <h4>Olivia</h4>
 
-                        <img src="images/img4.jpg" class="cover" alt="">
-                        
-                    </div>
+                                    <p class="time">Yesterday</p>
+                                    
+                                </div>
 
-                    <div class="details">
+                                <div class="message_p">
 
-                        <div class="listHead">
+                                    <p>I just subscribed to your channel</p>
 
-                            <h4>Parker</h4>
+                                    <b>2</b>
 
-                            <p class="time">Yesterday</p>
+                                </div>
 
-                        </div>
-
-                        <div class="message_p">
-
-                            <p>Hey!</p>       
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="block">
-
-                    <div class="imgBox">
-
-                        <img src="images/img7.jpg" class="cover" alt="">
-
-                    </div>
-
-                    <div class="details">
-
-                        <div class="listHead">
-
-                            <h4>Zoey</h4>
-
-                            <p class="time">18/01/2022</p>
-
-                        </div>
-
-                        <div class="message_p">
-
-                            <p>I'll get back to you</p>
-
-                        </div>
-
-                    </div>
-                    
-                </div>
-
-                <div class="block">
-
-                    <div class="imgBox">
-                        
-                        <img src="images/img8.jpg" class="cover" alt="">
-
-                    </div>
-
-                    <div class="details">
-
-                        <div class="listHead">
-
-                            <h4>Josh</h4>
-
-                            <p class="time">17/01/2022</p>
-
-                        </div>
-
-                        <div class="message_p">
-
-                            <p>Congratulations</p> 
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="block">
-
-                    <div class="imgBox">
-
-                        <img src="images/img9.jpg" class="cover" alt="">
-
-                    </div>
-
-                    <div class="details">
-
-                        <div class="listHead">
-
-                            <h4>Dian</h4>
-
-                            <p class="time">15/01/2022</p>
+                            </div>
                             
                         </div>
 
-                        <div class="message_p">
+                        <div class="block">
 
-                            <p>Thanks alot</p>
+                            <div class="imgBox">
+
+                                <img src="images/img4.jpg" class="cover" alt="">
+
+                            </div>
+
+                            <div class="details">
+
+                                <div class="listHead">
+
+                                    <h4>Parker</h4>
+
+                                    <p class="time">Yesterday</p>
+
+                                </div>
+
+                                <div class="message_p">
+
+                                    <p>Hey!</p>                            
+                                </div>
+
+                            </div>
 
                         </div>
 
-                    </div>
+                        <div class="block">
 
-                </div>
+                            <div class="imgBox">
 
-                <div class="block">
+                                <img src="images/img7.jpg" class="cover" alt="">
+                                
+                            </div>
 
-                    <div class="imgBox">
+                            <div class="details">
 
-                        <img src="images/img5.jpg" class="cover" alt="">
+                                <div class="listHead">
 
-                    </div>
+                                    <h4>Zoey</h4>
 
-                    <div class="details">
+                                    <p class="time">18/01/2022</p>
 
-                        <div class="listHead">
+                                </div>
 
-                            <h4>Sam</h4>
+                                <div class="message_p">
 
-                            <p class="time">Yesterday</p>
+                                    <p>I'll get back to you</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="block">
+
+                            <div class="imgBox">
+
+                                <img src="images/img8.jpg" class="cover" alt="">
+
+                            </div>
+
+                            <div class="details">
+
+                                <div class="listHead">
+
+                                    <h4>Josh</h4>
+
+                                    <p class="time">17/01/2022</p>
+
+                                </div>
+
+                                <div class="message_p">
+
+                                    <p>Congratulations</p> 
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="block">
+                            
+                            <div class="imgBox">
+
+                                <img src="images/img9.jpg" class="cover" alt="">
+
+                            </div>
+
+                            <div class="details">
+
+                                <div class="listHead">
+
+                                    <h4>Dian</h4>
+
+                                    <p class="time">15/01/2022</p>
+
+                                </div>
+                                
+                                <div class="message_p">
+
+                                    <p>Thanks alot</p>
+
+                                </div>
+
+                            </div>
 
                         </div>
                         
-                        <div class="message_p">
+                        <div class="block">
 
-                            <p>Did you finish the project?</p>
+                            <div class="imgBox">
+
+                                <img src="images/img5.jpg" class="cover" alt="">
+
+                            </div>
+
+                            <div class="details">
+
+                                <div class="listHead">
+
+                                    <h4>Sam</h4>
+
+                                    <p class="time">Yesterday</p>
+
+                                </div>
+
+                                <div class="message_p">
+
+                                    <p>Did you finish the project?</p>
+
+                                </div>
+
+                            </div>
 
                         </div>
 
-                    </div>
+                        <div class="block">
+
+                            <div class="imgBox">
+
+                                <img src="images/img6.jpg" class="cover" alt="">
+
+                            </div>
+
+                            <div class="details">
+
+                                <div class="listHead">
+
+                                    <h4>Junior</h4>
+
+                                    <p class="time">18/01/2022</p>
+
+                                </div>
+
+                                <div class="message_p">
+
+                                    <p>Nice course</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="block">
+
+                            <div class="imgBox">
+
+                                <img src="images/img7.jpg" class="cover" alt="">
+
+                            </div>
+
+                            <div class="details">
+
+                                <div class="listHead">
+
+                                    <h4>Zoey</h4>
+
+                                    <p class="time">18/01/2022</p>
+
+                                </div>
+
+                                <div class="message_p">
+
+                                    <p>I'll get back to you</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="block">
+
+                            <div class="imgBox">
+
+                                <img src="images/img8.jpg" class="cover" alt="">
+
+                            </div>
+
+                            <div class="details">
+
+                                <div class="listHead">
+
+                                    <h4>Josh</h4>
+
+                                    <p class="time">17/01/2022</p>
+
+                                </div>
+
+                                <div class="message_p">
+
+                                    <p>Congratulations</p> 
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="block">
+
+                            <div class="imgBox">
+
+                                <img src="images/img9.jpg" class="cover" alt="">
+
+                            </div>
+
+                            <div class="details">
+
+                                <div class="listHead">
+
+                                    <h4>Dian</h4>
+
+                                    <p class="time">15/01/2022</p>
+                                    
+                                </div>
+
+                                <div class="message_p">
+
+                                    <p>Thanks alot</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
 
                 </div>
-                
-                <div class="block">
-
-                    <div class="imgBox">
-
-                        <img src="images/img6.jpg" class="cover" alt="">
-
-                    </div>
-
-                    <div class="details">
-
-                        <div class="listHead">
-
-                            <h4>Junior</h4>
-
-                            <p class="time">18/01/2022</p>
-
-                        </div>
-
-                        <div class="message_p">
-
-                            <p>Nice course</p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="block">
-
-                    <div class="imgBox">
-
-                        <img src="images/img7.jpg" class="cover" alt="">
-
-                    </div>
-
-                    <div class="details">
-
-                        <div class="listHead">
-
-                            <h4>Zoey</h4>
-
-                            <p class="time">18/01/2022</p>
-
-                        </div>
-
-                        <div class="message_p">
-
-                            <p>I'll get back to you</p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="block">
-
-                    <div class="imgBox">
-
-                        <img src="images/img8.jpg" class="cover" alt="">
-
-                    </div>
-
-                    <div class="details">
-
-                        <div class="listHead">
-
-                            <h4>Josh</h4>
-
-                            <p class="time">17/01/2022</p>
-
-                        </div>
-
-                        <div class="message_p">
-
-                            <p>Congratulations</p> 
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="block">
-
-                    <div class="imgBox">
-
-                        <img src="images/img9.jpg" class="cover" alt="">
-
-                    </div>
-
-                    <div class="details">
-
-                        <div class="listHead">
-
-                            <h4>Dian</h4>
-
-                            <p class="time">15/01/2022</p>
-
-                        </div>
-
-                        <div class="message_p">
-
-                            <p>Thanks alot</p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="rightSide">
-
-            <div class="header">
-
-                <div class="imgText">
-
-                    <div class="userimg">
-
-                        <img src="images/img1.jpg" alt="" class="cover">
-
-                    </div>
-                    
-                    <h4>Qazi <br><span>online</span></h4>
-
-                </div>
-
-                <ul class="nav_icons">
-
-                    <li><ion-icon name="search-outline"></ion-icon></li>
-
-                    <li><ion-icon name="ellipsis-vertical"></ion-icon></li>
-
-                </ul>
                 
             </div>
 
-            <!-- CHAT-BOX -->
-            <div class="chatbox">
+            <div class="rightSide">
 
-                <div class="message my_msg">
+                <div class="header">
 
-                    <p>Hi <br><span>12:18</span></p>
+                    <div class="imgText">
 
-                </div>
+                        <div class="userimg">
 
-                <div class="message friend_msg">
+                            <img src="images/img1.jpg" alt="" class="cover">
 
-                    <p>Hey <br><span>12:18</span></p>
+                        </div>
+
+                        <h4>Qazi <br><span>online</span></h4>
+
+                    </div>
+
+                    <ul class="nav_icons">
+
+                        <li><ion-icon name="search-outline"></ion-icon></li>
+
+                        <li><ion-icon name="ellipsis-vertical"></ion-icon></li>
+
+                    </ul>
                     
                 </div>
 
-                <div class="message my_msg">
+                <!-- CHAT-BOX -->
+                <div class="chatbox">
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><span>12:15</span></p>
+                    <div class="message my_msg">
+
+                        <p>Hi <br><span>12:18</span></p>
+
+                    </div>
+
+                    <div class="message friend_msg">
+
+                        <p>Hey <br><span>12:18</span></p>
+
+                    </div>
+
+                    <div class="message my_msg">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><span>12:15</span></p>
+
+                    </div>
+
+                    <div class="message friend_msg">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><span>12:15</span></p>
+
+                    </div>
+
+                    <div class="message my_msg">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aliquid fugiat accusamus dolore qui vitae ratione optio sunt <br><span>12:15</span></p>
+
+                    </div>
+
+                    <div class="message friend_msg">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><span>12:15</span></p>
+
+                    </div>
+
+                    <div class="message my_msg">
+
+                        <p>Lorem ipsum dolor sit amet consectetur <br><span>12:15</span></p>
+
+                    </div>
+
+                    <div class="message friend_msg">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
+
+                    </div>
+                    
+                    <div class="message my_msg">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
+
+                    </div>
+
+                    <div class="message friend_msg">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
+
+                    </div>
+
+                    <div class="message my_msg">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
+
+                    </div>
+
+                    <div class="message friend_msg">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
+
+                    </div>
+
+                    <div class="message my_msg">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
+
+                    </div>
+
+                    <div class="message friend_msg">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
+
+                    </div>
+
+                    <div class="message my_msg">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
+
+                    </div>
+
+                    <div class="message friend_msg">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
+
+                    </div>
                     
                 </div>
-
-                <div class="message friend_msg">
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><span>12:15</span></p>
-
-                </div>
-
-                <div class="message my_msg">
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aliquid fugiat accusamus dolore qui vitae ratione optio sunt <br><span>12:15</span></p>
-
-                </div>
-
-                <div class="message friend_msg">
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><span>12:15</span></p>
-
-                </div>
-
-                <div class="message my_msg">
-
-                    <p>Lorem ipsum dolor sit amet consectetur <br><span>12:15</span></p>
-
-                </div>
-
-                <div class="message friend_msg">
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
-
-                </div>
                 
-                <div class="message my_msg">
+                <!-- CHAT INPUT -->
+                <div class="chat_input">
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
+                    <ion-icon name="happy-outline"></ion-icon>
 
-                </div>
+                    <!-- <ion-icon name="happy-outline"></ion-icon> -->
 
-                <div class="message friend_msg">
+                    <input type="text" placeholder="Type a message">
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
-
-                </div>
-
-                <div class="message my_msg">
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
-
-                </div>
-                
-                <div class="message friend_msg">
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
-
-                </div>
-
-                <div class="message my_msg">
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
-
-                </div>
-
-                <div class="message friend_msg">
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
-
-                </div>
-
-                <div class="message my_msg">
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
-
-                </div>
-
-                <div class="message friend_msg">
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
+                    <ion-icon name="mic"></ion-icon>
                     
                 </div>
 
             </div>
-            
-            <!-- CHAT INPUT -->
-            <div class="chat_input">
-
-                <ion-icon name="happy-outline"></ion-icon>
-
-                <!-- <ion-icon name="happy-outline"></ion-icon> -->
-                 
-                <input type="text" placeholder="Type a message">
-
-                <ion-icon name="mic"></ion-icon>
 
             </div>
 
@@ -555,6 +708,9 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Script Sidebar -->
+    <script src="../../assets/js/sidebar.js"></script>
 
 </body>
 

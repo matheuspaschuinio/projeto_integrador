@@ -156,7 +156,6 @@ body.dark-theme {
   color: var(--color-text-primary);
 }
 
-/** 11:52 */
 .search-form span {
   color: var(--color-text-placeholder);
 }
@@ -184,7 +183,6 @@ body.dark-theme {
   transition: .3s ease;
 }
 
-/** parei 20:58 */
 .menu-link .menu-label {
   transition: .3s ease;
 }
