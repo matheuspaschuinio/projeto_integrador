@@ -1,65 +1,39 @@
 <!DOCTYPE html>
-
-<html lang="pt-br">
-
+<html lang="en">
 <head>
-
     <meta charset="UTF-8">
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Mensagens | Alunos</title>
-
-    <!-- Tailwind CSS CLI -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
     <link rel="shortcut icon" href="../../assets/imgs/favicon/favicon.ico" type="image/x-icon">
-
-    <!-- Video do Chat Design - https://www.youtube.com/watch?v=rDJtEcccQ-s -->
-
+    <link rel="stylesheet" href="../../assets/css/mensagens-original.css">
 </head>
-
-<body class="flex justify-center items-center min-h-screen bg-[linear-gradient(_#009688_0%,_#009688_130px,_#d9dbd5_130px,_#d9dbd5_100%_)]">
-
-    <!-- Container -->
-    <div class="relative w-[1298px] max-w-full h-[calc(100vh - 40px)] bg-[#fff] [box-shadow:0_1px_1px_rgba(0,_0,_0,_0.06),_0_2px_5px_0_rgba(0,_0,_0,_0.06)] flex">
-
-        <!-- LeftSide -->
-        <div class="relative flex-[30%] bg-[#fff] border-r-[1px_solid_rgba(0,_0,_0,_0.2)]">
-
+<body>
+    <div class="container">
+        <div class="leftSide">
             <!-- Header -->
             <div class="header">
                 <div class="userimg">
-                    <img src="../../assets/imgs/mensagens/person-50.jpg" alt="" class="absolute top-[0] left-[0] w-full h-full object-cover">
+                    <img src="../../assets/imgs/mensagens/person-50.jpg" alt="" class="cover">
                 </div>
-                <ul class="flex">
-                    <li class="flex [list-style:none] cursor-pointer text-[#51585c] text-[1.5em] ml-[22px]"><ion-icon name="scan-circle-outline"></ion-icon></li>
-                    <li class="flex [list-style:none] cursor-pointer text-[#51585c] text-[1.5em] ml-[22px]"><ion-icon name="chatbox"></ion-icon></li>
-                    <li class="flex [list-style:none] cursor-pointer text-[#51585c] text-[1.5em] ml-[22px]"><ion-icon name="ellipsis-vertical"></ion-icon></li>
+                <ul class="nav_icons">
+                    <li><ion-icon name="scan-circle-outline"></ion-icon></li>
+                    <li><ion-icon name="chatbox"></ion-icon></li>
+                    <li><ion-icon name="ellipsis-vertical"></ion-icon></li>
                 </ul>
             </div>
-            
             <!-- Search Chat -->
-            <div class="relative w-full h-[50px] bg-[#f6f6f6] flex justify-center items-center px-[15px] py-[0]">
-
-                <div class="w-full">
-
-                    <input type="text" placeholder="Search or start new chat" class="w-full outline-[none] border-[none] bg-[#fff] p-[6px] h-[38px] rounded-[30px] text-[14px] pl-[40px] placeholder:text-[#bbb]">
-                    <ion-icon name="search-outline" class="absolute left-[30px] top-[14px] text-[1.2em]"></ion-icon> 
-
-                </div>              
-
+            <div class="search_chat">
+                <div>
+                    <input type="text" placeholder="Search or start new chat">
+                    <ion-icon name="search-outline"></ion-icon> 
+                </div>                
             </div>
-
             <!-- CHAT LIST -->
-            <div class="relative h-[calc(100% - 110px)] overflow-auto">
-
-                <!-- Block .active-->
-                <div class="relative w-full flex items-center p-[15px] border-b-[1px_solid_rgba(0,_0,_0,_0.06)] cursor-pointer bg-[#ebebeb]">
-
+            <div class="chatlist">
+                <div class="block active">
                     <div class="imgBox">
-                        <img src="images/img1.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
+                        <img src="images/img1.jpg" class="cover" alt="">
                     </div>
                     <div class="details">
                         <div class="listHead">
@@ -74,7 +48,7 @@
 
                 <div class="block unread">
                     <div class="imgBox">
-                        <img src="images/img2.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
+                        <img src="images/img2.jpg" class="cover" alt="">
                     </div>
                     <div class="details">
                         <div class="listHead">
@@ -90,7 +64,7 @@
 
                 <div class="block unread">
                     <div class="imgBox">
-                        <img src="images/img3.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
+                        <img src="images/img3.jpg" class="cover" alt="">
                     </div>
                     <div class="details">
                         <div class="listHead">
@@ -105,7 +79,7 @@
                 </div>
                 <div class="block">
                     <div class="imgBox">
-                        <img src="images/img4.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
+                        <img src="images/img4.jpg" class="cover" alt="">
                     </div>
                     <div class="details">
                         <div class="listHead">
@@ -119,7 +93,7 @@
                 </div>
                 <div class="block">
                     <div class="imgBox">
-                        <img src="images/img7.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
+                        <img src="images/img7.jpg" class="cover" alt="">
                     </div>
                     <div class="details">
                         <div class="listHead">
@@ -133,7 +107,7 @@
                 </div>
                 <div class="block">
                     <div class="imgBox">
-                        <img src="images/img8.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
+                        <img src="images/img8.jpg" class="cover" alt="">
                     </div>
                     <div class="details">
                         <div class="listHead">
@@ -147,7 +121,7 @@
                 </div>
                 <div class="block">
                     <div class="imgBox">
-                        <img src="images/img9.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
+                        <img src="images/img9.jpg" class="cover" alt="">
                     </div>
                     <div class="details">
                         <div class="listHead">
@@ -161,7 +135,7 @@
                 </div>
                 <div class="block">
                     <div class="imgBox">
-                        <img src="images/img5.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
+                        <img src="images/img5.jpg" class="cover" alt="">
                     </div>
                     <div class="details">
                         <div class="listHead">
@@ -175,7 +149,7 @@
                 </div>
                 <div class="block">
                     <div class="imgBox">
-                        <img src="images/img6.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
+                        <img src="images/img6.jpg" class="cover" alt="">
                     </div>
                     <div class="details">
                         <div class="listHead">
@@ -189,7 +163,7 @@
                 </div>
                 <div class="block">
                     <div class="imgBox">
-                        <img src="images/img7.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
+                        <img src="images/img7.jpg" class="cover" alt="">
                     </div>
                     <div class="details">
                         <div class="listHead">
@@ -203,7 +177,7 @@
                 </div>
                 <div class="block">
                     <div class="imgBox">
-                        <img src="images/img8.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
+                        <img src="images/img8.jpg" class="cover" alt="">
                     </div>
                     <div class="details">
                         <div class="listHead">
@@ -217,7 +191,7 @@
                 </div>
                 <div class="block">
                     <div class="imgBox">
-                        <img src="images/img9.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
+                        <img src="images/img9.jpg" class="cover" alt="">
                     </div>
                     <div class="details">
                         <div class="listHead">
@@ -231,26 +205,17 @@
                 </div>
             </div>
         </div>
-
-        <!-- RightSide -->
-        <div class="relative flex-[70%] bg-[#e5ddd5] before:content-[''] before:absolute before:top-[0] before:left-[0] before:w-full before:h-full before:bg-[url('images/pattern.png')] before:opacity-[0.06]">
-
-            <!-- header -->
-            <div class="relative w-full h-[60px] bg-[#ededed] flex justify-between items-center px-[15px] py-[0]">
-
+        <div class="rightSide">
+            <div class="header">
                 <div class="imgText">
-
-                    <!-- userimg-->
-                    <div class="relative w-[40px] h-[40px] overflow-hidden rounded-[50%] cursor-pointer">
-
-                        <img src="images/img1.jpg" alt="" class="absolute top-[0] left-[0] w-full h-full object-cover">
-
+                    <div class="userimg">
+                        <img src="images/img1.jpg" alt="" class="cover">
                     </div>
                     <h4>Qazi <br><span>online</span></h4>
                 </div>
-                <ul class="flex">
-                    <li class="flex [list-style:none] cursor-pointer text-[#51585c] text-[1.5em] ml-[22px]"><ion-icon name="search-outline"></ion-icon></li>
-                    <li class="flex [list-style:none] cursor-pointer text-[#51585c] text-[1.5em] ml-[22px]"><ion-icon name="ellipsis-vertical"></ion-icon></li>
+                <ul class="nav_icons">
+                    <li><ion-icon name="search-outline"></ion-icon></li>
+                    <li><ion-icon name="ellipsis-vertical"></ion-icon></li>
                 </ul>
             </div>
 
