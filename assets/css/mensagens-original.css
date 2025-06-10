@@ -223,6 +223,7 @@ body {
   text-overflow: ellipsis;
 }
 
+/** */
 .imgText {
   position: relative;
   display: flex;
