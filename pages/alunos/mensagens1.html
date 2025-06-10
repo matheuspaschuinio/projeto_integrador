@@ -55,177 +55,227 @@
             <!-- CHAT LIST -->
             <div class="relative h-[calc(100% - 110px)] overflow-auto">
 
-                <!-- Block .active-->
-                <div class="relative w-full flex items-center p-[15px] border-b-[1px_solid_rgba(0,_0,_0,_0.06)] cursor-pointer bg-[#ebebeb]">
+                <!-- Block active-->
+                <div class="relative w-full flex items-center p-[15px] border-b-[1px_solid_rgba(0,_0,_0,_0.06)] cursor-pointer bg-[#ebebeb] hover:bg-[#f5f5f5]">
 
-                    <div class="imgBox">
+                    <!-- imgbox -->
+                    <div class="relative min-w-[45px] h-[45px] overflow-hidden rounded-[50%] mr-[10px]">
                         <img src="images/img1.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
                     </div>
-                    <div class="details">
-                        <div class="listHead">
-                            <h4>Jhon Doe</h4>
-                            <p class="time">10:56</p>
+
+                    <!-- details-->
+                    <div class="relative w-full">
+                        <div class="flex justify-between mb-[5px]">
+                            <h4 class="text-[1.1em] font-semibold text-[#111]">Jhon Doe</h4>
+                            <p class="text-[0.75em] text-[#111]">10:56</p>
                         </div>
-                        <div class="message_p">
-                            <p>How are you doing?</p>
+                        <div class="flex justify-between items-center">
+                            <p class="text-[#aaa] text-[0.9em] overflow-hidden overflow-ellipsis">How are you doing?</p>
                         </div>
                     </div>
+
                 </div>
 
-                <div class="block unread">
-                    <div class="imgBox">
-                        <img src="images/img2.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
+                <!-- block unread -->
+                <div class="relative w-full flex items-center p-[15px] border-b-[1px_solid_rgba(0,_0,_0,_0.06)] cursor-pointer bg-[#ebebeb] hover:bg-[#f5f5f5]">
+
+                    <!-- imgbox -->
+                    <div class="relative min-w-[45px] h-[45px] overflow-hidden rounded-[50%] mr-[10px]">
+                        <img src="images/img1.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
                     </div>
-                    <div class="details">
-                        <div class="listHead">
+                    
+                    <!-- details-->
+                    <div class="relative w-full">
+                        <div class="flex justify-between mb-[5px]">
                             <h4>Andre</h4>
-                            <p class="time">12:34</p>
+                            <p class="text-[#06d755]">12:34</p>
                         </div>
-                        <div class="message_p">
-                            <p>I love your youtube videos!</p>
-                            <b>1</b>
+                        <div class="flex justify-between items-center">
+                            <p class="text-[#aaa] text-[0.9em] overflow-hidden overflow-ellipsis">I love your youtube videos!</p>
+                            <b class="bg-[#06d755] text-[#fff] min-w-[20px] h-[20px] rounded-[50%] flex justify-center items-center text-[0.75rem]">1</b>
                         </div>
                     </div>
                 </div>
 
-                <div class="block unread">
-                    <div class="imgBox">
-                        <img src="images/img3.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
+                <!-- block unread -->
+                <div class="relative w-full flex items-center p-[15px] border-b-[1px_solid_rgba(0,_0,_0,_0.06)] cursor-pointer bg-[#ebebeb] hover:bg-[#f5f5f5]">
+
+                    <!-- imgbox -->
+                    <div class="relative min-w-[45px] h-[45px] overflow-hidden rounded-[50%] mr-[10px]">
+                        <img src="images/img1.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
                     </div>
-                    <div class="details">
-                        <div class="listHead">
+                    
+                    <!-- details-->
+                    <div class="relative w-full">
+                        <div class="flex justify-between mb-[5px]">
                             <h4>Olivia</h4>
                             <p class="time">Yesterday</p>
                         </div>
-                        <div class="message_p">
-                            <p>I just subscribed to your channel</p>
-                            <b>2</b>
+                        <div class="flex justify-between items-center">
+                            <p class="text-[#aaa] text-[0.9em] overflow-hidden overflow-ellipsis">I just subscribed to your channel</p>
+                            <b class="bg-[#06d755] text-[#fff] min-w-[20px] h-[20px] rounded-[50%] flex justify-center items-center text-[0.75rem]">2</b>
                         </div>
                     </div>
                 </div>
-                <div class="block">
-                    <div class="imgBox">
-                        <img src="images/img4.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
+                <div class="relative w-full flex items-center p-[15px] border-b-[1px_solid_rgba(0,_0,_0,_0.06)] cursor-pointer bg-[#ebebeb] hover:bg-[#f5f5f5]">
+                    
+                    <!-- imgbox -->
+                    <div class="relative min-w-[45px] h-[45px] overflow-hidden rounded-[50%] mr-[10px]">
+                        <img src="images/img1.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
                     </div>
-                    <div class="details">
-                        <div class="listHead">
+
+                    <!-- details-->
+                    <div class="relative w-full">
+                        <div class="flex justify-between mb-[5px]">
                             <h4>Parker</h4>
                             <p class="time">Yesterday</p>
                         </div>
-                        <div class="message_p">
-                            <p>Hey!</p>                            
+                        <div class="flex justify-between items-center">
+                            <p class="text-[#aaa] text-[0.9em] overflow-hidden overflow-ellipsis">Hey!</p>                            
                         </div>
                     </div>
                 </div>
-                <div class="block">
-                    <div class="imgBox">
-                        <img src="images/img7.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
+                <div class="relative w-full flex items-center p-[15px] border-b-[1px_solid_rgba(0,_0,_0,_0.06)] cursor-pointer bg-[#ebebeb] hover:bg-[#f5f5f5]">
+                    
+                    <!-- imgbox -->
+                    <div class="relative min-w-[45px] h-[45px] overflow-hidden rounded-[50%] mr-[10px]">
+                        <img src="images/img1.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
                     </div>
-                    <div class="details">
-                        <div class="listHead">
+
+                    <!-- details-->
+                    <div class="relative w-full">
+                        <div class="flex justify-between mb-[5px]">
                             <h4>Zoey</h4>
                             <p class="time">18/01/2022</p>
                         </div>
-                        <div class="message_p">
-                            <p>I'll get back to you</p>
+                        <div class="flex justify-between items-center">
+                            <p class="text-[#aaa] text-[0.9em] overflow-hidden overflow-ellipsis">I'll get back to you</p>
                         </div>
                     </div>
                 </div>
-                <div class="block">
-                    <div class="imgBox">
-                        <img src="images/img8.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
+                <div class="relative w-full flex items-center p-[15px] border-b-[1px_solid_rgba(0,_0,_0,_0.06)] cursor-pointer bg-[#ebebeb] hover:bg-[#f5f5f5]">
+                    
+                    <!-- imgbox -->
+                    <div class="relative min-w-[45px] h-[45px] overflow-hidden rounded-[50%] mr-[10px]">
+                        <img src="images/img1.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
                     </div>
-                    <div class="details">
-                        <div class="listHead">
+
+                    <!-- details-->
+                    <div class="relative w-full">
+                        <div class="flex justify-between mb-[5px]">
                             <h4>Josh</h4>
                             <p class="time">17/01/2022</p>
                         </div>
-                        <div class="message_p">
-                            <p>Congratulations</p> 
+                        <div class="flex justify-between items-center">
+                            <p class="text-[#aaa] text-[0.9em] overflow-hidden overflow-ellipsis">Congratulations</p> 
                         </div>
                     </div>
                 </div>
-                <div class="block">
-                    <div class="imgBox">
-                        <img src="images/img9.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
+                <div class="relative w-full flex items-center p-[15px] border-b-[1px_solid_rgba(0,_0,_0,_0.06)] cursor-pointer bg-[#ebebeb] hover:bg-[#f5f5f5]">
+                    
+                    <!-- imgbox -->
+                    <div class="relative min-w-[45px] h-[45px] overflow-hidden rounded-[50%] mr-[10px]">
+                        <img src="images/img1.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
                     </div>
-                    <div class="details">
-                        <div class="listHead">
+
+                    <!-- details-->
+                    <div class="relative w-full">
+                        <div class="flex justify-between mb-[5px]">
                             <h4>Dian</h4>
                             <p class="time">15/01/2022</p>
                         </div>
-                        <div class="message_p">
-                            <p>Thanks alot</p>
+                        <div class="flex justify-between items-center">
+                            <p class="text-[#aaa] text-[0.9em] overflow-hidden overflow-ellipsis">Thanks alot</p>
                         </div>
                     </div>
                 </div>
-                <div class="block">
-                    <div class="imgBox">
-                        <img src="images/img5.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
+                <div class="relative w-full flex items-center p-[15px] border-b-[1px_solid_rgba(0,_0,_0,_0.06)] cursor-pointer bg-[#ebebeb] hover:bg-[#f5f5f5]">
+                    
+                    <!-- imgbox -->
+                    <div class="relative min-w-[45px] h-[45px] overflow-hidden rounded-[50%] mr-[10px]">
+                        <img src="images/img1.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
                     </div>
-                    <div class="details">
-                        <div class="listHead">
+
+                    <!-- details-->
+                    <div class="relative w-full">
+                        <div class="flex justify-between mb-[5px]">
                             <h4>Sam</h4>
                             <p class="time">Yesterday</p>
                         </div>
-                        <div class="message_p">
-                            <p>Did you finish the project?</p>
+                        <div class="flex justify-between items-center">
+                            <p class="text-[#aaa] text-[0.9em] overflow-hidden overflow-ellipsis">Did you finish the project?</p>
                         </div>
                     </div>
                 </div>
-                <div class="block">
-                    <div class="imgBox">
-                        <img src="images/img6.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
+                <div class="relative w-full flex items-center p-[15px] border-b-[1px_solid_rgba(0,_0,_0,_0.06)] cursor-pointer bg-[#ebebeb] hover:bg-[#f5f5f5]">
+                    
+                    <!-- imgbox -->
+                    <div class="relative min-w-[45px] h-[45px] overflow-hidden rounded-[50%] mr-[10px]">
+                        <img src="images/img1.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
                     </div>
-                    <div class="details">
-                        <div class="listHead">
+
+                    <!-- details-->
+                    <div class="relative w-full">
+                        <div class="flex justify-between mb-[5px]">
                             <h4>Junior</h4>
                             <p class="time">18/01/2022</p>
                         </div>
-                        <div class="message_p">
-                            <p>Nice course</p>
+                        <div class="flex justify-between items-center">
+                            <p class="text-[#aaa] text-[0.9em] overflow-hidden overflow-ellipsis">Nice course</p>
                         </div>
                     </div>
                 </div>
-                <div class="block">
-                    <div class="imgBox">
-                        <img src="images/img7.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
+                <div class="relative w-full flex items-center p-[15px] border-b-[1px_solid_rgba(0,_0,_0,_0.06)] cursor-pointer bg-[#ebebeb] hover:bg-[#f5f5f5]"></div>
+                    
+                    <!-- imgbox -->
+                    <div class="relative min-w-[45px] h-[45px] overflow-hidden rounded-[50%] mr-[10px]">
+                        <img src="images/img1.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
                     </div>
-                    <div class="details">
-                        <div class="listHead">
+
+                    <!-- details-->
+                    <div class="relative w-full">
+                        <div class="flex justify-between mb-[5px]">
                             <h4>Zoey</h4>
                             <p class="time">18/01/2022</p>
                         </div>
-                        <div class="message_p">
-                            <p>I'll get back to you</p>
+                        <div class="flex justify-between items-center">
+                            <p class="text-[#aaa] text-[0.9em] overflow-hidden overflow-ellipsis">I'll get back to you</p>
                         </div>
                     </div>
                 </div>
-                <div class="block">
-                    <div class="imgBox">
-                        <img src="images/img8.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
+                <div class="relative w-full flex items-center p-[15px] border-b-[1px_solid_rgba(0,_0,_0,_0.06)] cursor-pointer bg-[#ebebeb] hover:bg-[#f5f5f5]">
+                    
+                    <!-- imgbox -->
+                    <div class="relative min-w-[45px] h-[45px] overflow-hidden rounded-[50%] mr-[10px]">
+                        <img src="images/img1.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
                     </div>
-                    <div class="details">
-                        <div class="listHead">
+
+                    <!-- details-->
+                    <div class="relative w-full">
+                        <div class="flex justify-between mb-[5px]">
                             <h4>Josh</h4>
                             <p class="time">17/01/2022</p>
                         </div>
-                        <div class="message_p">
-                            <p>Congratulations</p> 
+                        <div class="flex justify-between items-center">
+                            <p clas="text-[#aaa] text-[0.9em] overflow-hidden overflow-ellipsis">Congratulations</p> 
                         </div>
                     </div>
                 </div>
-                <div class="block">
-                    <div class="imgBox">
-                        <img src="images/img9.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
-                    </div>
-                    <div class="details">
-                        <div class="listHead">
+                <div class="relative w-full flex items-center p-[15px] border-b-[1px_solid_rgba(0,_0,_0,_0.06)] cursor-pointer bg-[#ebebeb] hover:bg-[#f5f5f5]">
+                    
+                    <!-- imgbox -->
+                    <div class="relative min-w-[45px] h-[45px] overflow-hidden rounded-[50%] mr-[10px]">
+                        <img src="images/img1.jpg" class="absolute top-[0] left-[0] w-full h-full object-cover" alt="">
+                    </div>  
+
+                    <!-- details-->
+                    <div class="relative w-full">
+                        <div class="flex justify-between mb-[5px]">
                             <h4>Dian</h4>
                             <p class="time">15/01/2022</p>
                         </div>
-                        <div class="message_p">
-                            <p>Thanks alot</p>
+                        <div class="flex justify-between items-center">
+                            <p class="text-[#aaa] text-[0.9em] overflow-hidden overflow-ellipsis">Thanks alot</p>
                         </div>
                     </div>
                 </div>
