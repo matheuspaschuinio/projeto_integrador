@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Direção e Secretaria | Listagem de Alunos</title>
+    
+    <!-- Tailwind CSS CLI -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Link dos icones(google fontes) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../../assets/imgs/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- CSS Externo importano intellisense tailwind -->
+    <link rel="stylesheet" href="../../../assets/css/tailwind.css">
+
+</head>
+
+<body class="flex bg-[#CCE7FE]">
+
+    <!-- Full Sidebar -->
+    <aside class="bg-[#1CABE9] w-[70px] h-screen">
+
+        <!-- Header Sidebar -->                 
+        <div>
+
+            <img src="../../../assets/imgs/logo/logo-64.png" alt="Logo da Escolink" class="p-3 pb-5">
+
+        </div>
+
+        <!-- Links -->
+        <div class="wrapper-links">
+
+            <a href="../home.html">
+
+                <div class="flex flex-col justify-content-center items-center p-3 text-black hover:bg-white">
+
+                    <span class="material-symbols-rounded">
+                      home
+                    </span>
+
+                    <span class="text-[14px]">Home</span>
+
+                </div>
+
+            </a>
+
+            <a href="../agenda.html">
+
+                <div class="flex flex-col justify-content-center items-center p-3 text-black hover:bg-white"">
+
+                    <span class="material-symbols-rounded">
+                        calendar_today
+                    </span>
+
+                    <span class="text-[14px]">Agenda</span>
+
+                </div>
+
+            </a>
+
+            <a href="../cadastro.html">
+
+                <div class="flex flex-col justify-content-center items-center p-3 text-black bg-white"">
+
+                    <span class="material-symbols-rounded">
+                      checkbook
+                    </span>
+
+                    <span class="text-[14px]">Cadastro</span>
+
+                </div>
+
+            </a>
+
+            <a href="../mensagens.html">
+
+                <div class="flex flex-col justify-content-center items-center p-3 text-black hover:bg-white"">
+
+                    <span class="material-symbols-rounded">
+                      chat
+                    </span>
+
+                    <span class="text-[14px]">Mensagens</span>
+
+                </div>
+
+            </a>      
+
+        </div>
+        
+    </aside>
+        
+    <!-- Conteúdo principal -->
+    <main class="p-5 grow">        
+
+        <h1 class="text-4xl mb-5 w-full">Listagem de Alunos</h1>
+
+        <label class="mb-5">Pesquisar:</label>
+
+        <input class="bg-white border rounded mb-5 w-full" type="search" id="search" placeholder="Nome, RA ou turma">
+
+        <br>
+
+        <!-- Cards dos alunos cadastrados -->
+        <a href="#">
+
+            <div class="bg-white border rounded p-3 mb-3">
+
+                <p class="text-2xl">Aluno 1</p>
+
+                <p>RA: 123456789</p>
+
+                <p>Turma: 9º Ano</p>
+
+            </div>
+
+        </a>
+
+        <a href="#">
+
+            <div class="bg-white border rounded p-3 mb-3">
+
+                <p class="text-2xl">Aluno 2</p>
+
+                <p>RA: 123456789</p>
+
+                <p>Turma: 9º Ano</p>
+
+            </div>
+
+        </a>
+
+        <a href="#">
+
+            <div class="bg-white border rounded p-3 mb-3">
+
+                <p class="text-2xl">Aluno 3</p>
+
+                <p>RA: 123456789</p>
+
+                <p>Turma: 9º Ano</p>
+
+            </div>
+
+        </a>
+
+        <a href="#">
+
+            <div class="bg-white border rounded p-3 mb-3">
+
+                <p class="text-2xl">Aluno 4</p>
+
+                <p>RA: 123456789</p>
+
+                <p>Turma: 9º Ano</p>
+
+            </div>
+
+        </a>        
+
+    </main>
+    
+</body>
+
+</html>

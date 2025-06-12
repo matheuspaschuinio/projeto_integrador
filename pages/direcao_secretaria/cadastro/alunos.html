@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Direção e Secretaria | Cadastro de Alunos</title>
+    
+    <!-- Tailwind CSS CLI -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Link dos icones(google fontes) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../../assets/imgs/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- CSS Externo importano intellisense tailwind -->
+    <link rel="stylesheet" href="../../../assets/css/tailwind.css">
+
+</head>
+
+<body class="flex bg-[#CCE7FE]">
+
+    <!-- Full Sidebar -->
+    <aside class="bg-[#1CABE9] w-[70px] h-screen">
+
+        <!-- Header Sidebar -->                 
+        <div>
+
+            <img src="../../../assets/imgs/logo/logo-64.png" alt="Logo da Escolink" class="p-3 pb-5">
+
+        </div>
+
+        <!-- Links -->
+        <div class="wrapper-links">
+
+            <a href="../home.html">
+
+                <div class="flex flex-col justify-content-center items-center p-3 text-black hover:bg-white">
+
+                    <span class="material-symbols-rounded">
+                      home
+                    </span>
+
+                    <span class="text-[14px]">Home</span>
+
+                </div>
+
+            </a>
+
+            <a href="../agenda.html">
+
+                <div class="flex flex-col justify-content-center items-center p-3 text-black hover:bg-white"">
+
+                    <span class="material-symbols-rounded">
+                        calendar_today
+                    </span>
+
+                    <span class="text-[14px]">Agenda</span>
+
+                </div>
+
+            </a>
+
+            <a href="../cadastro.html">
+
+                <div class="flex flex-col justify-content-center items-center p-3 text-black bg-white"">
+
+                    <span class="material-symbols-rounded">
+                      checkbook
+                    </span>
+
+                    <span class="text-[14px]">Cadastro</span>
+
+                </div>
+
+            </a>
+
+            <a href="../mensagens.html">
+
+                <div class="flex flex-col justify-content-center items-center p-3 text-black hover:bg-white"">
+
+                    <span class="material-symbols-rounded">
+                      chat
+                    </span>
+
+                    <span class="text-[14px]">Mensagens</span>
+
+                </div>
+
+            </a>      
+
+        </div>
+        
+    </aside>
+        
+    <!-- Conteúdo principal -->
+    <main class="p-5">        
+
+        <h1 class="text-4xl mb-5 w-full">Cadastro de Alunos</h1>
+
+        <img class="w-[200px] mx-auto" src="../../../assets/imgs/icons/person.png" alt="">
+
+        <label for="ra">RA</label>
+
+        <input type="number" id="ra" class="bg-white border rounded mb-5 w-full">
+
+        <br>
+
+        <label for="nome">Nome completo</label>
+
+        <input type="text" id="nome" class="bg-white border rounded mb-5 w-full">
+
+        <br>
+
+        <label for="senha">Senha</label>
+
+        <input type="password" name="senha" id="senha" class="bg-white border rounded mb-5 w-full">
+
+        <br>
+
+        <label for="turma" class="mb-5">Turma</label>
+
+        <select name="turma" id="turma" class="bg-white border rounded mb-5 w-full">
+
+            <option value="Turma1">Turma 1</option>
+
+            <option value="Turma2">Turma 2</option>
+
+            <option value="Turma3">Turma 3</option>
+
+            <option value="Turma4">Turma 4</option>
+
+            <option value="Turma5">Turma 5</option>
+
+            <option value="Turma6">Turma 6</option>
+
+            <option value="Turma7">Turma 7</option>
+
+            <option value="Turma8">Turma 8</option>
+
+        </select>
+
+        <button class="bg-[#58A65A] text-white pr-5 pl-5 pt-2 pb-2 rounded-lg hover:cursor-pointer" onclick="cadastrarAluno()">Cadastrar</button>
+
+    </main>
+
+    <script>
+
+        function cadastrarAluno() {
+
+            window.location.href = '../listagem/alunos.html';
+
+        }
+
+    </script>
+    
+</body>
+
+</html>
