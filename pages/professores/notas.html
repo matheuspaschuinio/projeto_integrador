@@ -123,11 +123,57 @@
 
         <br>
 
-        <input type="text" id="bimestre" class="bg-white border rounded" value="1º Bimestre">
+        <input type="text" id="bimestre" class="bg-white border rounded mb-20" value="1º Bimestre" disabled>
+
+        <br>
+
+        <label for="alunos" class="mb-5">Aluno:</label>
+
+        <select name="alunos" id="alunos" class="bg-white border rounded mb-20 w-full">
+
+            <option value="aluno1">Aluno 1</option>
+
+            <option value="aluno2">Aluno 2</option>
+
+            <option value="aluno3">Aluno 3</option>
+
+            <option value="aluno4">Aluno 4</option>
+
+        </select>
+
+        <input type="text" value="Avaliação" class="bg-white border rounded mb-5 text-center" disabled>
+
+        <input type="number" value="0" class="bg-white border rounded mb-5 text-center">
+
+        <br>
+
+        <input type="text" value="Participação" class="bg-white border rounded mb-5 text-center" disabled>
+
+        <input type="number" value="0" class="bg-white border rounded mb-5 text-center">
+
+        <br>
+
+        <input type="text" value="Trabalho" class="bg-white border rounded mb-5 text-center" disabled>
+
+        <input type="number" value="0" class="bg-white border rounded mb-5 text-center">
+
+        <br>
+
+        <button class="bg-[#58A65A] text-white pr-5 pl-5 pt-2 pb-2 rounded-lg hover:cursor-pointer" onclick="salvarNota()">Salvar</button>
 
     </main>
 
     <script src="../../assets/js/sidebar.js"></script>
+
+    <script>
+
+        function salvarNota() {
+
+            alert('Funcionalidade ainda não desenvolvida.');
+
+        }
+
+    </script>
     
 </body>
 
