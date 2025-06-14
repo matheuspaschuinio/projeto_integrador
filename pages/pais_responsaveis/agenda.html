@@ -105,13 +105,154 @@
         
     </aside>
         
-    <main class="main-content">
+    <main class="main-content flex-1">
 
-        <h1 class="page-title">Olá, Aluno 1</h1>
+        <div class="p-6 min-h-screen w-full">
+            <h1 class="text-2xl font-semibold mb-2">Agenda</h1>
+            <h2 class="text-xl mb-6">Home / Agenda</h2>
 
-        <h1 class="page-title">Home</h1>
+            <div class="flex items-center justify-center">
+                <div class="bg-white rounded-lg shadow p-4 flex h-20 mb-4 items-center justify-center w-200">
+                    <p>Confira sua agenda, exercícios pendentes, presença e eventos.</p>
+                </div>
+            </div>
 
-        <p class="card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique nesciunt nulla officiis itaque laboriosam voluptas aut dicta, nihil libero ipsum debitis vel praesentium magni a autem. Quia libero non illo?</p>
+            <div class="flex flex-col items-center justify-center">
+                <div>
+                    <p class="mb-2">JUNHO</p>
+
+                    <div class="bg-white rounded-lg shadow p-4 flex  h-25 mb-4  justify-around w-200">
+                        <div class="bg-[#D9D9D9] rounded-lg p-4 border-2 flex flex-col justify-center items-center w-18">
+                            <p>1</p>
+                            <p>Dom</p>
+                        </div>
+
+                        <div class="bg-[#14FF66] rounded-lg p-4 border-2 flex flex-col justify-center items-center w-18">
+                            <p>2</p>
+                            <p>Seg</p>
+                        </div>
+
+                        <div class="bg-[#D9D9D9] rounded-lg p-4 border-2 flex flex-col justify-center items-center w-18">
+                            <p>3</p>
+                            <p>Ter</p>
+                        </div>
+
+                        <div class="bg-[#D9D9D9] rounded-lg p-4 border-2 flex flex-col justify-center items-center w-18">
+                            <p>4</p>
+                            <p>Qua</p>
+                        </div>
+
+                        <div class="bg-[#D9D9D9] rounded-lg p-4 border-2 flex flex-col justify-center items-center w-18">
+                            <p>5</p>
+                            <p>Qui</p>
+                        </div>
+
+                        <div class="bg-[#FBFF18] rounded-lg p-4 border-2 flex flex-col justify-center items-center w-18">
+                            <p>6</p>
+                            <p>Sex</p>
+                        </div>
+
+                        <div class="bg-[#D9D9D9] rounded-lg p-4 border-2 flex flex-col justify-center items-center w-18">
+                            <p>7</p>
+                            <p>Sab</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="flex gap-32">
+                    <div>
+                        <div class="bg-white rounded-lg shadow p-4 flex flex-col justify-between h-30 w-100 mb-4">
+                            <div class="flex justify-between">
+                                <p class="font-bold">02 / 06 (Segunda)</p>
+                                <img class="h-6 w-auto" src="/assets/imgs/icons/done.jpg" alt="Ícone de pronto">
+                            </div>
+                            <div class="">
+                                <p>Presença confirmada</p>
+                                <p>Todos os trabalhos entregeues</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow p-4 flex flex-col justify-between h-30 w-100 mb-4">
+                            <div class="flex justify-between">
+                                <p class="font-bold">06 / 06 (Sexta)</p>
+                                <img class="h-6 w-auto" src="/assets/imgs/icons/alert.png" alt="Ícone de pronto">
+                            </div>
+                            <div class="">
+                                <p>Trabalho de  matemática</p>
+                                <p>Situação: Pendente</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow p-4 flex flex-col justify-between h-30 w-100 mb-4">
+                            <div class="flex justify-between">
+                                <p class="font-bold">28 / 05 (Quarta)</p>
+                                <img class="h-6 w-auto" src="/assets/imgs/icons/danger.png" alt="Ícone de pronto">
+                            </div>
+                            <div class="">
+                                <p>Trabalho de Geografia</p>
+                                <p>Situação: Não entregue</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="text-gray-800 p-4 max-w-xs bg-white rounded-lg">
+                            <div class="flex justify-center items-center mb-4">
+                            <h2 class="text-xl font-bold">Junho 2025</h2>
+                            </div>
+
+                            <div class="grid grid-cols-7 gap-1 text-center text-sm">
+                                <div class="font-semibold text-gray-600">Dom</div>
+                                <div class="font-semibold text-gray-600">Seg</div>
+                                <div class="font-semibold text-gray-600">Ter</div>
+                                <div class="font-semibold text-gray-600">Qua</div>
+                                <div class="font-semibold text-gray-600">Qui</div>
+                                <div class="font-semibold text-gray-600">Sex</div>
+                                <div class="font-semibold text-gray-600">Sáb</div>
+
+                                <div class="p-1.5 rounded-sm bg-blue-100 text-blue-800 font-bold">1</div> <div class="p-1.5 rounded-sm hover:bg-gray-100 cursor-pointer">2</div>
+                                <div class="p-1.5 rounded-sm hover:bg-gray-100 cursor-pointer">3</div>
+                                <div class="p-1.5 rounded-sm hover:bg-gray-100 cursor-pointer">4</div>
+                                <div class="p-1.5 rounded-sm hover:bg-gray-100 cursor-pointer">5</div>
+                                <div class="p-1.5 rounded-sm hover:bg-gray-100 cursor-pointer">6</div>
+                                <div class="p-1.5 rounded-sm hover:bg-gray-100 cursor-pointer">7</div>
+
+                                <div class="p-1.5 rounded-sm bg-blue-100 text-blue-800 font-bold">8</div>
+                                <div class="p-1.5 rounded-sm hover:bg-gray-100 cursor-pointer">9</div>
+                                <div class="p-1.5 rounded-sm hover:bg-gray-100 cursor-pointer">10</div>
+                                <div class="p-1.5 rounded-sm hover:bg-gray-100 cursor-pointer">11</div>
+                                <div class="p-1.5 rounded-sm hover:bg-gray-100 cursor-pointer">12</div>
+                                <div class="p-1.5 rounded-sm hover:bg-gray-100 cursor-pointer">13</div>
+                                <div class="p-1.5 rounded-sm bg-blue-100 text-blue-800 font-bold">14</div> <div class="p-1.5 rounded-sm bg-blue-100 text-blue-800 font-bold">15</div>
+                                <div class="p-1.5 rounded-sm hover:bg-gray-100 cursor-pointer">16</div>
+                                <div class="p-1.5 rounded-sm hover:bg-gray-100 cursor-pointer">17</div>
+                                <div class="p-1.5 rounded-sm hover:bg-gray-100 cursor-pointer">18</div>
+                                <div class="p-1.5 rounded-sm hover:bg-gray-100 cursor-pointer">19</div>
+                                <div class="p-1.5 rounded-sm hover:bg-gray-100 cursor-pointer">20</div>
+                                <div class="p-1.5 rounded-sm bg-blue-100 text-blue-800 font-bold">21</div>
+
+                                <div class="p-1.5 rounded-sm bg-blue-100 text-blue-800 font-bold">22</div>
+                                <div class="p-1.5 rounded-sm hover:bg-gray-100 cursor-pointer">23</div>
+                                <div class="p-1.5 rounded-sm hover:bg-gray-100 cursor-pointer">24</div>
+                                <div class="p-1.5 rounded-sm hover:bg-gray-100 cursor-pointer">25</div>
+                                <div class="p-1.5 rounded-sm hover:bg-gray-100 cursor-pointer">26</div>
+                                <div class="p-1.5 rounded-sm hover:bg-gray-100 cursor-pointer">27</div>
+                                <div class="p-1.5 rounded-sm bg-blue-100 text-blue-800 font-bold">28</div>
+
+                                <div class="p-1.5 rounded-sm bg-blue-100 text-blue-800 font-bold">29</div>
+                                <div class="p-1.5 rounded-sm hover:bg-gray-100 cursor-pointer">30</div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
 
