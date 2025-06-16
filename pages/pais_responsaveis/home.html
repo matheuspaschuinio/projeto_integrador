@@ -1,119 +1,124 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Pais e Responsáveis | Home</title>
-    
-    <!-- Tailwind CSS CLI -->
+
+
+    <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- Link dos icones(google fontes) -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
 
-    <!-- Favicon -->
+    <!-- Ícones Google (Material Symbols Rounded) -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+
+    <!-- Favicon do site -->
     <link rel="shortcut icon" href="../../assets/imgs/favicon/favicon.ico" type="image/x-icon">
 
-    <!-- CSS Externo importano intellisense tailwind -->
-    <link rel="stylesheet" href="../../assets/css/tailwind.css">
 
+    <!-- CSS personalizado com Tailwind -->
+    <link rel="stylesheet" href="../../assets/css/tailwind.css">
 </head>
 
-<body class="flex bg-[#CCE7FE]">
 
-    <!-- Full Sidebar -->
-    <aside class="bg-[#1CABE9] w-[70px] h-screen sticky left-0 top-0">
+<body class="flex bg-[#CCE7FE] min-h-screen">
 
-        <!-- Header Sidebar -->                 
-        <div>
 
-            <img src="../../assets/imgs/logo/logo-64.png" alt="Logo da Escolink" class="p-3 pb-5">
+    <!-- Sidebar lateral -->
+    <aside class="bg-[#1CABE9] w-[80px] h-screen flex flex-col items-center py-4 space-y-2">
+        <!-- Logo -->
+        <img src="../../assets/imgs/logo/logo-64.png" alt="Logo Escolink" class="w-10 h-10 mb-4">
 
-        </div>
 
-        <!-- Links -->
-        <div class="wrapper-links">
+        <!-- Links da barra lateral -->
+        <a href="home.html" class="flex flex-col items-center text-black bg-white p-2 rounded-md w-full">
+            <span class="material-symbols-rounded">home</span>
+            <span class="text-[12px] leading-none">Home</span>
+        </a>
 
-            <a href="home.html">
 
-                <div class="flex flex-col justify-content-center items-center p-3 text-black bg-white">
+        <a href="agenda.html" class="flex flex-col items-center text-black hover:bg-white p-2 rounded-md w-full">
+            <span class="material-symbols-rounded">calendar_today</span>
+            <span class="text-[12px] leading-none">Agenda</span>
+        </a>
 
-                    <span class="material-symbols-rounded">
-                      home
-                    </span>
 
-                    <span class="text-[14px]">Home</span>
+        <a href="boletim.html" class="flex flex-col items-center text-black hover:bg-white p-2 rounded-md w-full">
+            <span class="material-symbols-rounded">description</span>
+            <span class="text-[12px] leading-none">Boletim</span>
+        </a>
 
-                </div>
 
-            </a>
-
-            <a href="agenda.html">
-
-                <div class="flex flex-col justify-content-center items-center p-3 text-black hover:bg-white"">
-
-                    <span class="material-symbols-rounded">
-                        calendar_today
-                    </span>
-
-                    <span class="text-[14px]">Agenda</span>
-
-                </div>
-
-            </a>
-
-            <a href="boletim.html">
-
-                <div class="flex flex-col justify-content-center items-center p-3 text-black hover:bg-white"">
-
-                    <span class="material-symbols-rounded">
-                      description
-                    </span>
-
-                    <span class="text-[14px]">Boletim</span>
-
-                </div>
-
-            </a>
-
-            <a href="mensagens.html">
-
-                <div class="flex flex-col justify-content-center items-center p-3 text-black hover:bg-white"">
-
-                    <span class="material-symbols-rounded">
-                      chat
-                    </span>
-
-                    <span class="text-[14px]">Mensagens</span>
-
-                </div>
-
-            </a>      
-
-        </div>
-        
+        <a href="mensagens.html" class="flex flex-col items-center text-black hover:bg-white p-2 rounded-md w-full">
+            <span class="material-symbols-rounded">chat</span>
+            <span class="text-[12px] leading-none">Mensagens</span>
+        </a>
     </aside>
-        
-        <div class="main-content">
 
-            <h1 class="page-title">Olá, Pais e Resposáveis 1</h1>            
 
-            <h1 class="page-title">Home</h1>
+    <!-- Conteúdo principal -->
+    <main class="flex-1 p-6">
+        <!-- Cabeçalho com avatar e saudação -->
+        <div class="flex justify-between items-start mb-6">
+            <div class="flex items-center gap-3">
+                <!-- Avatar -->
+                <div
+                    class="w-12 h-12 rounded-full bg-white border border-black flex items-center justify-center overflow-hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 text-black" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M12 12c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5zm0 2c-3.33 0-10 1.669-10 5v3h20v-3c0-3.331-6.67-5-10-5z" />
+                    </svg>
+                </div>
+                <!-- Saudação -->
+                <h1 class="text-lg font-semibold">Olá, Pais 1</h1>
+            </div>
 
-            <p class="card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique nesciunt nulla officiis itaque laboriosam voluptas aut dicta, nihil libero ipsum debitis vel praesentium magni a autem. Quia libero non illo?</p>
 
+            <!-- Navegação superior direita -->
+            <nav class="fixed top-4 right-8 flex gap-8 text-sm text-gray-800 z-50">
+                <a href="#" class="hover:underline">Home</a>
+                <a href="#" class="hover:underline">Sobre</a>
+                <a href="#" class="hover:underline">Contato</a>
+            </nav>
         </div>
 
-    </div>
+
+        <!-- Título da Página -->
+        <h2 class="text-2xl font mb-4">home</h2>
 
 
-    <script src="../../assets/js/sidebar.js"></script>
-    
+        <!-- Card Aluno 1 -->
+        <h2 class="text-2xl font-semibold mb-2">Aluno 1:</h2>
+        <div class="bg-white rounded-lg shadow-md w-full max-w-[1300px] h-[90px] border border-gray-300 flex items-start justify-start text-left p-4 mb-4">
+            <p>Lucas Andrade Silvas.</p>
+        </div>
+
+
+        <!-- Card Aluno 2 -->
+        <h2 class="text-2xl font-semibold mb-2">Aluno 2:</h2>
+        <div class="bg-white rounded-lg shadow-md w-full max-w-[1300px] h-[90px] border border-gray-300 flex items-start justify-start text-left p-4 mb-4">
+            <p>Mariana Costa Oliveira</p>
+        </div>
+
+
+        <!-- Card Aluno 3 -->
+        <h2 class="text-2xl font-semibold mb-2">Aluno 3:</h2>
+        <div class="bg-white rounded-lg shadow-md w-full max-w-[1300px] h-[90px] border border-gray-300 flex items-start justify-start text-left p-4 mb-4">
+            <p>Gabriel Souza Pereira </p>
+        </div>
+
+
+        <!-- Card Aluno 4 -->
+        <h2 class="text-2xl font-semibold mb-2">Aluno 4:</h2>
+        <div class="bg-white rounded-lg shadow-md w-full max-w-[1300px] h-[90px] border border-gray-300 flex items-start justify-start text-left p-4 mb-4">
+            <p>Beatriz Lima Fernandes</p>
+        </div>
+    </main>
+
+
 </body>
-
 </html>
