@@ -1,71 +1,57 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
 
+
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Professores | Home</title>
-    
-    <!-- Tailwind CSS CLI -->
+
+
+    <!-- Importação do Tailwind CSS via CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- Link dos icones(google fontes) -->
-    <link rel="stylesheet" 
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
 
-    <!-- Favicon -->
+    <!-- Ícones Google Fonts (Material Symbols Rounded) -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+
+    <!-- Favicon da página -->
     <link rel="shortcut icon" href="../../assets/imgs/favicon/favicon.ico" type="image/x-icon">
 
-    <!-- CSS Externo importano intellisense tailwind -->
-    <link rel="stylesheet" href="../../assets/css/tailwind.css">
 
+    <!-- CSS externo com IntelliSense do Tailwind -->
+    <link rel="stylesheet" href="../../assets/css/tailwind.css">
 </head>
 
+
 <body class="flex bg-[#CCE7FE]">
-
-    <!-- Full Sidebar -->
-    <aside class="bg-[#1CABE9] w-[70px] h-screen sticky left-0 top-0">
-
-        <!-- Header Sidebar -->                 
+    <!-- Sidebar lateral -->
+    <aside class="bg-[#1CABE9] w-[70px] h-screen">
+        <!-- Logo no topo da sidebar -->
         <div>
-
             <img src="../../assets/imgs/logo/logo-64.png" alt="Logo da Escolink" class="p-3 pb-5">
-
         </div>
 
-        <!-- Links -->
+
+        <!-- Links de navegação na sidebar -->
         <div class="wrapper-links">
-
+            <!-- Link Home -->
             <a href="home.html">
-
                 <div class="flex flex-col justify-content-center items-center p-3 text-black bg-white">
-
-                    <span class="material-symbols-rounded">
-                      home
-                    </span>
-
+                    <span class="material-symbols-rounded">home</span>
                     <span class="text-[14px]">Home</span>
-
                 </div>
-
             </a>
 
+
+            <!-- Link Turma -->
             <a href="turma.html">
-
-                <div class="flex flex-col justify-content-center items-center p-3 text-black hover:bg-white"">
-
-                    <span class="material-symbols-rounded">
-                        groups
-                    </span>
-
+                <div class="flex flex-col justify-content-center items-center p-3 text-black hover:bg-white">
+                    <span class="material-symbols-rounded">groups</span>
                     <span class="text-[14px]">Turma</span>
-
                 </div>
-
             </a>
 
             <a href="agenda.html">
@@ -82,85 +68,91 @@
 
             </a>
 
+            <!-- Link Chamada -->
             <a href="aula-chamada.html">
-
-                <div class="flex flex-col justify-content-center items-center p-3 text-black hover:bg-white"">
-
-                    <span class="material-symbols-rounded">
-                      format_list_numbered
-                    </span>
-
+                <div class="flex flex-col justify-content-center items-center p-3 text-black hover:bg-white">
+                    <span class="material-symbols-rounded">format_list_numbered</span>
                     <span class="text-[14px]">Chamada</span>
-
                 </div>
-
             </a>
 
+
+            <!-- Link Notas -->
             <a href="notas.html">
-
-                <div class="flex flex-col justify-content-center items-center p-3 text-black hover:bg-white"">
-
-                    <span class="material-symbols-rounded">
-                      star
-                    </span>
-
+                <div class="flex flex-col justify-content-center items-center p-3 text-black hover:bg-white">
+                    <span class="material-symbols-rounded">star</span>
                     <span class="text-[14px]">Notas</span>
-
                 </div>
-
             </a>
 
+
+            <!-- Link Mensagens -->
             <a href="mensagens.html">
-
-                <div class="flex flex-col justify-content-center items-center p-3 text-black hover:bg-white"">
-
-                    <span class="material-symbols-rounded">
-                      chat
-                    </span>
-
+                <div class="flex flex-col justify-content-center items-center p-3 text-black hover:bg-white">
+                    <span class="material-symbols-rounded">chat</span>
                     <span class="text-[14px]">Mensagens</span>
-
                 </div>
-
-            </a>      
-
+            </a>
         </div>
-        
     </aside>
-        
+
+
+    <!-- Conteúdo principal da página -->
     <div class="main-content flex-1">
         <div class="p-6 min-h-screen w-full">
+
+
+            <!-- Avatar -->
+            <div
+                class="w-12 h-12 rounded-full bg-white border border-black flex items-center justify-center overflow-hidden mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 text-black" fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M12 12c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5zm0 2c-3.33 0-10 1.669-10 5v3h20v-3c0-3.331-6.67-5-10-5z" />
+                </svg>
+            </div>
+
+
+            <!-- Saudação ao professor -->
             <h1 class="text-2xl font-semibold mb-2">Olá Professor 1</h1>
             <h2 class="text-xl mb-6">Home</h2>
 
-            <div class="bg-white rounded-lg shadow p-4 flex flex-col justify-between h-40 max-w-md w-full mb-4">
+
+            <!-- Card Turma 1  -->
+            <div class="bg-white rounded-lg shadow p-4 flex flex-col justify-between h-40 max-w-4xl w-full mb-4">
                 <p class="text-lg font-medium self-start">Turma 1</p>
+                <p class="text-lg font-medium self-start">serie: 6°C</p>
                 <button class="bg-[#58A65A] text-white h-8 text-sm px-4 py-1 rounded-xl hover:bg-[#4c924e] self-end">
                     Selecionar
                 </button>
             </div>
 
-            <div class="bg-white rounded-lg shadow p-4 flex flex-col justify-between h-40 max-w-md w-full mb-4">
+
+            <!-- Card Turma 2  -->
+            <div class="bg-white rounded-lg shadow p-4 flex flex-col justify-between h-40 max-w-4xl w-full mb-4">
                 <p class="text-lg font-medium self-start">Turma 2</p>
+                <p class="text-lg font-medium self-start">série: 7°A</p>
                 <button class="bg-[#58A65A] text-white h-8 text-sm px-4 py-1 rounded-xl hover:bg-[#4c924e] self-end">
                     Selecionar
                 </button>
             </div>
 
-            <div class="bg-white rounded-lg shadow p-4 flex flex-col justify-between h-40 max-w-md w-full mb-4">
+
+            <!-- Card Turma 3  -->
+            <div class="bg-white rounded-lg shadow p-4 flex flex-col justify-between h-40 max-w-4xl w-full mb-4">
                 <p class="text-lg font-medium self-start">Turma 3</p>
+                <p class="text-lg font-medium self-start">série: 8°B</p>
                 <button class="bg-[#58A65A] text-white h-8 text-sm px-4 py-1 rounded-xl hover:bg-[#4c924e] self-end">
                     Selecionar
                 </button>
             </div>
-
+        </div>
     </div>
 
-    </div>
 
-
+    <!-- Script JS (Sidebar) -->
     <script src="../../assets/js/sidebar.js"></script>
-    
 </body>
+
 
 </html>
