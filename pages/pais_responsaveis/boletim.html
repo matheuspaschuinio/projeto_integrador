@@ -102,14 +102,151 @@
         
     </aside>
         
-    <main class="main-content">
+    <main class="flex-1 overflow-auto">
+        <div class="boletim-container">
+            <h1 class="text-center text-3xl font-bold mb-6">BOLETIM</h1>
 
-        <h1 class="page-title">Olá, Aluno 1</h1>
+            <div class="flex flex-col lg:flex-row items-center gap-6 mb-6">
 
-        <h1 class="page-title">Home</h1>
+                <!-- foto do aluno  -->
 
-        <p class="card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique nesciunt nulla officiis itaque laboriosam voluptas aut dicta, nihil libero ipsum debitis vel praesentium magni a autem. Quia libero non illo?</p>
+                <div class="w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center text-5xl">
+                    <img src="../../assets/imgs/icons/person.png" alt="" class="w-[50px]">
+                </div>
 
+                <!-- Dados do Aluno -->
+
+                <div class="flex-1 w-full space-y-3">
+                    <input type="text" value="Aluno: Aluno 1" class="w-full border p-3 rounded-lg text-lg bg-white" readonly/>
+                    <input type="text" value="RA: 000000000000-0" class="w-full border p-3 rounded-lg text-lg bg-white" readonly/>
+                    <input type="text" value="Turma: 9º ano" class="w-full border p-3 rounded-lg text-lg  bg-white" readonly/>
+                    <input type="email" value="Email do aluno: aluno1@gmail.com" class="w-full border p-3 rounded-lg text-lg bg-white" readonly/>
+                </div>
+            </div>
+
+            <!-- Funcionalidades -->
+
+            <div class="flex flex-col sm:flex-row items-center gap-4 mb-6">
+                <button class="bg-gray-300 px-5 py-2 rounded-lg text-lg hover:bg-gray-400 w-full sm:w-auto text-center">
+                    Gerar PDF
+                </button>
+                <select class="border p-2 rounded-lg text-lg w-full sm:w-auto bg-white">
+                    <option>2025</option>
+                    <option>2024</option>
+                    <option>2023</option>
+                </select>
+            </div>
+
+            <!-- Tabela boletim -->
+
+            <div class="overflow-x-auto">
+                <table class="table-auto w-full border border-gray-300 text-center text-base">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="border p-3">Disciplinas</th>
+                            <th class="border p-3">1º Bim</th>
+                            <th class="border p-3">2º Bim</th>
+                            <th class="border p-3">3º Bim</th>
+                            <th class="border p-3">4º Bim</th>
+                            <th class="border p-3">Final</th>
+                            <th class="border p-3">Anál. do conselho</th>
+                            <th class="border p-3">Faltas</th>
+                            <th class="border p-3">Frequência</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border p-3 bg-white">Língua Portuguesa</td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                        </tr>
+                        <tr>
+                            <td class="border p-3 bg-white">Matemática</td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                        </tr>
+                        <tr>
+                            <td class="border p-3 bg-white">Ciências</td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                        </tr>
+                        <tr>
+                            <td class="border p-3 bg-white">História</td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                        </tr>
+                        <tr>
+                            <td class="border p-3 bg-white">Geografia</td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                        </tr>
+                        <tr>
+                            <td class="border p-3 bg-white">Arte</td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                        </tr>
+                        <tr>
+                            <td class="border p-3 bg-white">Educação Física</td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                        </tr>
+                        <tr>
+                            <td class="border p-3 bg-white">Língua Inglesa</td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                            <td class="border p-3 bg-white"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </main>
 
     <!-- Script Sidebar -->
