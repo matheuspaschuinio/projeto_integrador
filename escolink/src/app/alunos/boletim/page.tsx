@@ -1,3 +1,7 @@
+// Importando componente sidebar
+import { Sidebar } from '@/components/sidebar';
+
+// Importando Metadata
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -8,7 +12,17 @@ export default function Boletim() {
 
   return (
 
-    <div>Aluno Boletim</div>
+    <div className='flex'>
+        
+      <Sidebar />
+
+      <main className='p-5'>
+            
+        <h1 className='text-[1.5em] font-bold uppercase'>aluno / boletim</h1>
+
+      </main>
+
+    </div>
 
   )
 
